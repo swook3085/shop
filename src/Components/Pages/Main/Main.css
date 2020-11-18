@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding : 0;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+body {
+    padding : 0;
+    width : 100%;
+    height : 100%;
+}
+a {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity:0;
+    }
+}
+
+@keyframes downup {
+    0% {
+        opacity: 0;
+        transform: translateY(0, 100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes bounce {
+    from,
+    to {
+        margin-bottom: 0;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        margin-bottom: 8px;
+        animation-timing-function: ease-in;
+    }
+}
+
+.mainImage {
+    width: 100%;
+    height : calc(100vh - 90px);
+    margin-top : 90px;
+    position: relative;
+    background-image: url('../../images/image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%)
+}
+.mainText-wrap {
+    position: absolute;
+    width: 100%;
+    height : 300px;
+    top : 50%;
+    margin-top : -50px;
+}
+.mainText {
+    width: 300px;
+    height : 100%;
+    margin : 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.mainText span {
+    color : yellowgreen;
+}
+.mainImage img { 
+    width: 100%;
+}
+
+.mainrow:nth-child(1) .maincol:nth-child(1) {
+    height : 250px;
+    border-bottom: 1px solid #ccc;
+}
+
+.notice {
+    padding : 19px 24px 20px 24px;
+}
+.notice-header {
+    height : 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.notice-header .notice-title {
+    float: left;
+}
+.notice-header .notice-title h3 {
+    margin: 0;
+    font-size: 16px;
+}
+.mainrow:nth-child(1) .maincol:nth-child(1) h3 {
+    color : orange;
+}
+.mainrow:nth-child(1) .maincol:nth-child(2) h3 {
+    color : green;
+}
+.notice-header .notice-more {
+    float: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.notice-body {
+    clear: both;
+    margin-top : 10px;
+}
+.notice-body ul li {
+    width : 100%;
+    height : 30px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.notice-body ul li a {
+    display: block;
+    width: 100%;
+    height : 100%;
+    color: #000;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.mainrow:nth-child(1) .maincol:nth-child(2) {
+    height : 250px;
+    border-bottom: 1px solid #ccc;
+}
+.mainrow:nth-child(2) .maincol:nth-child(1) {
+    background-color : yellowgreen;
+    height : 250px;
+}
+.footer {
+    border-top : 1px solid #ccc;
+    clear: both;
+    height : 150px;
+}
+.address-wrap {
+    width: 90%;
+    height : 100%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.ad {
+    text-align: center;
+    font-weight: 600;
+}
+.ad-text1 p {
+    float: left;
+    width: 100%;
+    margin: 0;
+    margin-top : 15px;
+}
+.ad-text2 p, .ad-text3 p {
+    float: left;
+    width: 100%;
+}
+.ad-text2 p span, .ad-text3 p span {
+    display: inline-block;
+    width: 20px;
+    height : 100%;
+}
+.ad-text2 p, .ad-text3 p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.ad-text2, .ad-text3 {
+    clear: both;
+    width: 100%;
+}
+.ad-text4 p {
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* 스크롤바 커스텀 */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+@media screen and (min-width : 768px) {
+    .mainText {
+        width: 400px;
+        font-size: 28px;
+    }
+    .address-wrap {
+        font-size: 14px;
+    }
+    .mainrow:nth-child(1) {
+        display: flex
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(1) {
+        float: left;
+        flex: 1;
+        overflow: hidden;
+        height : 300px;
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(2) {
+        flex: 1;
+        overflow: hidden;
+        height : 300px;
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(1) .notice-wrap {
+        padding-left: 5%;
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(2) .notice-wrap {
+        padding-right: 5%;
+    }
+    .mainText {
+        width: 500px;
+        font-size: 24px;
+    }
+}
+@media screen and (min-width : 1280px) {  
+    .mainText {
+        width: 500px;
+        font-size: 34px;
+    }
+    .scroll-downs {
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        left: 0;
+        margin: 0 auto;
+        width: 34px;
+        height: 55px;
+    }
+
+    .mousey {
+        width: 3px;
+        padding: 7px 12px;
+        height: 35px;
+        border-radius: 25px;
+        border: 2px solid #fff;
+        box-sizing: content-box;
+    }
+
+    .scroller {
+        width: 3px;
+        height: 8px;
+        border-radius: 25%;
+        background-color: #fff;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+        animation-iteration-count: infinite;
+    }
+    .mainrow:nth-child(1) {
+        width: 70%;
+        margin : 0 auto;
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(1), .mainrow:nth-child(1) .maincol:nth-child(2) {
+        border: none;
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(1) .notice-wrap {
+        padding: 0;
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(2) .notice-wrap {
+        padding: 0;
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(1) h3 {
+        font-size: 18px;
+    }
+    .mainrow:nth-child(1) .maincol:nth-child(2) h3 {
+        font-size: 18px;
+    }
+    .notice-body ul li {
+        height : 40px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .notice-body ul li a:hover {
+        text-decoration: underline;
+    }
+    .notice-header .notice-more a:hover {
+        text-decoration: underline;
+    }
+}

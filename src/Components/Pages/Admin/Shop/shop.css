@@ -1,0 +1,512 @@
+.productInfo {
+    width: 1500px;
+    height : 50px;
+    margin: 40px auto 0 auto;
+}
+.hideBackground {
+    background-color: #8b93a9;
+}
+.showBackground {
+    background-color: #fff;
+    border : 1px solid #000;
+    margin-bottom: 40px;
+}
+.productInfo-infoText {
+    display: block;
+    height : 100%;
+    float: left;
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.hideInfoText {
+    color: #fff;
+}
+.showInfoText {
+    color: #000;
+}
+.productInfo-btn {
+    border-left: 1px solid #98989b;
+    width: 50px;
+    height : 50px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+}
+.infoHide-btn::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height : 2px;
+    background-color: #fff;
+    top : 50%;
+    left : 50%;
+    margin-left: -10px;
+}
+
+.infoShow-btn::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height : 2px;
+    left : 50%;
+    margin-left : -10px;
+    background-color: #000;
+    top : 50%;
+}
+.infoShow-btn::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height : 2px;
+    background-color: #000;
+    top : 50%;
+    left : 50%;
+    margin-left : -10px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+.productInfo-hideInfo {
+    display: block;
+}
+.productInfo-showInfo {
+    display: none;
+}
+.admim-contents {
+    width: 1500px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin : 0 auto;
+    border : 1px solid #d4d4d4;
+    border-top : none;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+.ptext {
+    height : 32px;
+    line-height: 14px;
+    padding: 0 9px 2px;
+    box-sizing: border-box;
+    border: 1px solid #d4d4d4;
+    font-size: 14px;
+    line-height: 26px;
+    color: #535354;
+    outline: 0 none;
+    transition: border .2s ease-out;
+}
+.name {
+    width: 500px;
+}
+.price {
+    width: 150px;
+    text-align: right;
+}
+.desc {
+    width: 80%;
+}
+.product-table {
+    table-layout: fixed;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+}
+.product-table tbody td, .product-table tbody th{
+    border: 1px solid #dedede;
+}
+.product-table colgroup col:nth-child(1) {
+    width: 190px;
+}
+.product-table colgroup col:nth-child(2) {
+    width: 308px;
+}
+.product-table colgroup col:nth-child(3) {
+    width: auto;
+}
+.tdTitle {
+    background-color: #f3f3f3;
+    color: #2e3039;
+    padding : 11px 15px 10px;
+    font-size: 14px;
+    text-align: left;
+}
+.tdTitle span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: normal;
+    color: #1b7ffe;
+}
+.tdContent {
+    padding: 10px 15px;
+}
+.productLength {
+    font-size: 14px;
+    margin-left : 5px;
+}
+.productLength strong {
+    color : orange;
+}
+.tdContent-1, .tdContent-2 {
+    vertical-align: top;
+}
+.txttitle {
+    color: #2e3039;
+    font-size: 14px;
+}
+.ql-container {
+    height: 600px !important;
+}
+.ql-editor{
+    min-height: 100px !important;
+    max-height: 600px;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+
+.product_mImage, .product_mImage-on {
+    margin-top: 10px;
+    width: 268px;
+    height: 268px;
+    border: 1px solid #d4d4d4;
+}
+.product_mImage-on {
+    position: relative;
+    text-align: center;
+}
+.btn-mImage {
+    overflow: hidden;
+    text-indent: -150%;
+    white-space: nowrap;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    position: relative;
+    cursor: pointer;
+}
+.btn-mImage:hover {
+    background-color: #f5f6f8;
+}
+.btn-mImage::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 16px;
+    margin: -8px 0 0 -1px;
+    background-color: #565656;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    background-image: none;
+}
+.btn-mImage::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -8px;
+    width: 16px;
+    height: 2px;
+    background-color: #565656;
+    background-image: none;
+}
+.mImg, .addImage img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+}
+.mImage-btn-wrap {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height : 40px;
+    transition: 0.3s;
+}
+.imgHoverOn {
+    opacity: 1;
+    transition: 0.3s;
+}
+.btn-mImage-change, .btn-addImage-change {
+    overflow: hidden;
+    text-indent: -150%;
+    white-space: nowrap;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: rgba(0,0,0,0.6);
+    float: left;
+    position: relative;
+}
+.btn-mImage-change:before, .btn-addImage-change:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    left: 50%;
+    margin-left: -2px;
+    width: 4px;
+    height: 10px;
+    border: 1px solid #fefefe;
+    border-bottom: 0;
+    transform: rotate(45deg);
+}
+.btn-mImage-change:after, .btn-addImage-change:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: 2px;
+    left: 50%;
+    margin-left: -5.7px;
+    width: 4px;
+    height: 4px;
+    border-bottom: 1px solid #fefefe;
+    border-left: 1px solid #fefefe;
+}
+
+.btn-mImage-delete, .btn-addImage-delete {
+    border: none;
+    background: rgba(0,0,0,0.6);
+    width: calc(50% - 1px);
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    border-left: 1px solid #949494
+}
+.btn-mImage-delete:hover, .btn-mImage-change:hover, .btn-addImage-delete:hover, .btn-addImage-change:hover {
+    transition: 0.3s;
+    background-color : orange;
+}
+.btn-mImage-delete::after, .btn-addImage-delete::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 16px;
+    margin: -8px 0 0 -1px;
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    background-color: #fff;
+    background-image: none;
+}
+.btn-mImage-delete::before,.btn-addImage-delete::before  {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -8px;
+    width: 16px;
+    height: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background-color: #fff;
+    background-image: none;
+}
+.txtsize {
+    margin: 4px 0;
+    color: #97989b;
+    font-size: 13px;
+    vertical-align: bottom;
+}
+.txttitle span {
+    color: orange;
+    font-weight: 600;
+}
+.addImage {
+    width: 100px;
+    height : 100px;
+    border: 1px solid #d4d4d4;
+    position: relative;
+    text-align: center;
+}
+.btn-addImage {
+    overflow: hidden;
+    text-indent: -150%;
+    white-space: nowrap;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    position: relative;
+    cursor: pointer;
+}
+.btn-addImage:hover {
+    background-color: #f5f6f8;
+}
+.btn-addImage::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 16px;
+    margin: -8px 0 0 -1px;
+    background-color: #565656;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    background-image: none;
+}
+.btn-addImage::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -8px;
+    width: 16px;
+    height: 2px;
+    background-color: #565656;
+    background-image: none;
+}
+.list {
+    margin: 0 20px 0 0;
+}
+.product_addImage ul li {
+    margin : 10px 0;
+    float: left;
+}
+.addImage-btn-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height : 30px;
+    transition: 0.3s;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height : 32px;
+    float: left;
+    line-height: 32px;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border : 1px solid orange;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #fff;
+    border : 1px solid orange
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #fff;
+    border : 1px solid orange
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 4.5px;
+      left: 4.5px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: orange;
+  }
+  .admin-shopBtnWrap {
+    position: absolute;
+    bottom: 0;
+    right : 0;
+    width: 100%;
+    height : 100px;
+    margin-left : -220px;
+	padding-left: 220px;
+    box-sizing : border-box;
+    border-top: 1px solid orange;
+    background-color: #fff;
+    -webkit-box-shadow: 0px -5px 15px -2px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px -5px 15px -2px rgba(0,0,0,0.1);
+    box-shadow: 0px -5px 15px -2px rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 99px;
+  }
+  .shopBtn {
+      display: inline-block;
+      width: 150px;
+      height : 50px;
+  }
+  .shopBtn button {
+      width: 100%;
+      height : 100%;
+      cursor: pointer;
+      border : none;
+      background-color: orange;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      transition: .2s ease-out;
+  }
+  .shopBtn button:hover {
+    background-color: peru;
+  }
+  .deliverySelect {
+    padding: 0 30px 0 10px;
+    width: 285px;
+    height: 32px;
+    margin: 0;
+    padding: 0 6px;
+    border: 1px solid #d4d4d4;
+    color: #2e3039;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .cost2 {
+      width: 100px;
+  }

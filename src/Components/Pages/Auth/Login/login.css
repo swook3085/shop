@@ -1,0 +1,124 @@
+.MuiDialog-paperWidthSm {
+    width: 100%;
+}
+.MuiDialog-paper {
+    margin: 24px !important;
+}
+.MuiDialogContent-root {
+    padding: 8px 12px !important;
+}
+.MuiDialog-paperScrollPaper {
+    max-height: 100% !important;
+}
+.contents-wrap {
+    width : 90%;
+    margin : 0 auto;
+}
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.txtbFocus {
+    border: 1px solid orange;
+}
+.txtbFocusOut {
+    border: 1px solid #ccc;
+}
+.txtb {
+    padding : 5px 10px;
+}
+.txtb:nth-of-type(1) {
+    margin-bottom: 15px;
+}
+.loginCheckText {
+    height: 30px;
+    padding-left: 5px;
+    clear: both;
+}
+.loginCheckText p {
+    font-size: 12px;
+    line-height: 24px;
+}
+.txtb input {
+    width : 100%;
+    height : 30px;
+    border: none;
+    font-size: 14px;
+}
+.MuiButtonBase-root {
+    position: absolute !important;
+    right : 0;
+    top : 0;
+}
+.MuiDialogTitle-root {
+    padding : 10px 24px !important;
+}
+.logbtn, .registerbtn {
+    width: 100%;
+    height : 40px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+.logbtn {
+    margin-bottom: 10px;
+    background-color: orange;
+    color: #fff;
+}
+.registerbtn {
+    margin-bottom: 20px;
+    border : 1px solid #ccc;
+    background-color: #fff;
+}
+.footerText {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+input:focus { outline: none; }
+
+@media screen and (min-width : 768px) {
+
+    .txtb input {
+        height : 40px;
+        font-size: 16px;
+    }
+    .logbtn, .registerbtn {
+        height : 50px;
+    }
+    .footerText {
+        font-size: 14px;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+@media screen and (min-width : 1280px) {
+    .txtb {
+        padding: 10px 35px 10px 15px;
+    }
+    .txtb input {
+        height : 40px;
+        font-size: 16px;
+    }
+    .logbtn, .registerbtn {
+        height : 60px;
+    }
+    .logbtn {
+        margin-bottom: 15px;
+    }
+    .logbtn:hover {
+        background-color : darkgoldenrod;
+    }
+    .registerbtn:hover {
+        background-color : #f7f7f7;
+    }
+    .footerText {
+        font-size: 16px;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
